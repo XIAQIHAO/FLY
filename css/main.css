@@ -1,0 +1,490 @@
+/* ------顶部导航开始-------- */
+.nav{
+width: 100%;
+height: 50px;
+padding: 0px 200px;
+box-sizing: border-box;
+line-height: 50px;
+background-color: rgba(0, 0, 0, .8);
+}
+.nav .topsidebar{
+    width: 100%;
+    height: 100%;
+   
+}
+.topsidebar .left-sidebar{
+    height: 100%;
+  
+    
+    
+}
+.topsidebar .logo{
+    display: inline-block;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    background: url(../images/30.png) no-repeat center;
+   
+}
+.left-sidebar ul{
+    height: 100%;
+    
+}
+.left-sidebar ul li a{
+   display: inline-block;
+   height: 100%;
+   padding: 0 40px;
+   transition:background-color,color .5s;
+    
+}
+.left-sidebar ul li a:hover{
+    background-color: #000000;
+    color: white;
+}
+.list{
+    display: none;
+    background-color: rgba(0, 0, 0, .8);
+    height: 150px !important;
+    width: 112px;
+    text-align: center;
+    color: seashell;
+    border-radius: 5px;
+    box-shadow: 0 0 10px white;
+    transition: display .5s;
+    cursor: pointer;
+}
+.left-sidebar li:nth-child(5):hover .list{
+    display: block;
+    z-index: 999;
+}
+   
+
+.right-sidebar{
+    height: 100%;
+    width: 200px;
+    line-height: 50px;
+    background-color: salmon;
+}
+.topsidebar .right{
+    right: 0;
+    top: 0;
+    
+}
+.topsidebar .right li{
+    padding: 0 20px;
+    
+}
+.topsidebar .right>li>a{
+    display: inline-block;  
+    line-height: 50px;
+    height: 50px;
+}
+.topsidebar .right>li>a>i{
+    font-size: 20px;
+}
+.topsidebar .right>li>a>i:hover{
+    color: wheat;
+}
+.topsidebar .hide{
+    display: none;
+    left: 0;
+    top: 0;
+} 
+
+/* ------顶部导航结束-------- */
+
+
+/* -------音频区域------- */
+.content{
+    
+    overflow: hidden;
+    width: 100%;
+    height: 850px;
+    background-color: rgba(0, 0, 0, .5);
+    
+}
+.content video{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.content .content-wrap{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 200px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    
+}
+.content-wrap h1:nth-of-type(2),
+.content-wrap h2:nth-of-type(2){
+    display: none;
+}
+.content .content-wrap h1{
+    margin-top:150px;
+    
+}
+.content .content-wrap h1 p{
+    color: rgba(255, 255, 255, .5);
+    text-align: right;
+    font-size: 45px;
+    font-weight: bold;
+}
+.content-wrap h2{
+   
+    margin-top: 50px;
+    font-size: 23px;
+    font-weight: inherit;
+    color: rgba(255, 255, 255, .8);
+    letter-spacing: 2px;
+
+}
+.content-wrap h2 span{
+   display: block;
+    margin-bottom: 5px;
+}
+.content-wrap .btn{
+    display: inline-block;
+    right: 270px;
+    bottom: 300px;
+    padding: 20px 50px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: wheat;
+    font-size: 20px;
+    background-color: transparent;
+    transition: background .5s linear;
+}
+.content-wrap .btn:hover{
+    background:linear-gradient(0deg,pink,#ccc,skyblue);
+}
+.content .corner{
+    display: inline-block;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-left: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    z-index: 999;
+ 
+
+}
+
+/* -------音频区域------- */
+
+
+/* -------侧边栏------- */
+.sidebar{
+position: fixed;
+right: 0;
+top: 300px;
+}
+.sidebar ul li{
+   height: 50px;
+   width: 150px;
+   line-height: 50px;
+    background-color: #31353d;
+    transition: all .5s ease;
+    text-align: center;
+    transform: translateX(100px);
+    cursor: pointer;
+    color: white;
+   
+  
+}
+.sidebar ul li:first-child{
+    background-color: skyblue;
+  
+}
+.sidebar ul li i{
+    float: left;
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    background: url(../images/信息.png) no-repeat center;
+    background-size: 35px;
+}
+.sidebar ul li:nth-child(2) i{
+    background: url(../images/电话.png) no-repeat center;
+}
+.sidebar ul li:nth-child(3) i{
+    background: url(../images/日志.png) no-repeat center;
+}
+.sidebar ul li:nth-child(4) i{
+    background: url(../images/微信.png) no-repeat center;
+}
+.sidebar ul li:nth-child(5) i{
+    background: url(../images/QQ.png) no-repeat center;
+}
+.sidebar ul li:hover{
+    transform: translateX(0);
+    background-color: skyblue;
+}
+.sidebar ul li:nth-child(4):hover{
+transform: translateX(100px);
+
+}
+.sidebar ul li:nth-child(4):hover .tools{
+   display: block;
+    
+    }
+.sidebar ul li .tools{
+    display: none;
+    left: -220px;
+    padding: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: 0 0 5px white;
+    animation: flash .5s 1;
+}
+@keyframes flash{
+    from{
+        opacity: 0;
+        left: -200px;
+    }
+    to{
+            opacity: 1;
+            left: -220px;
+    }
+}
+
+
+/* -------侧边栏结束------- */
+
+
+/* -------侧边栏开始------- */
+.wrapper{
+    width: 100%;
+    height: 800px;
+    
+}
+.wrapper .wrapper-box{
+    width: 100%;
+    height: 100%;
+    padding: 100px 200px;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgba(0,0,0,.8);
+   
+    
+}
+.wrapper .wrapper-box p:nth-of-type(1){
+    font-size: 50px;
+    
+}
+.wrapper .wrapper-box p span{
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.wrapper-box .computer{
+    width: 75%;
+    height: 400px;
+    perspective: 800px;
+    margin: 20px auto;
+}
+.wrapper-box .computer img{
+    width: 100%;
+    height:550px;
+}
+.wrapper-box .computer video{
+   z-index: -1;
+    top: 30px;
+    left: 105px;
+    width:76%;
+    height: 90%;
+    object-fit: cover;
+    
+}
+.wrapper .computers{
+    display: none;
+}
+.wrapper-box .computers img{
+    height: 100%;
+}
+
+/* -------侧边栏结束------- */
+
+
+/*------- h5模板说明 ------*/
+.conatiner{
+    width: 100%;
+    height: auto;
+}
+.conatiner .container-box{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    padding: 20px 200px;
+    box-sizing: border-box;
+}
+.c-b{
+    background-color: rgba(192, 192, 192, .3)
+}
+.container-box .con{
+    flex: 1;
+    
+}
+
+.container-box .con img{
+    width: 100%;
+    height: 100%;
+}
+.container-box .r-con{
+    text-align: left;
+    padding: 15px 0 0 30px;
+    box-sizing: border-box;
+   
+}
+.container-box .r-con p{
+    margin-bottom: 10px;
+}
+.container-box .r-con p:not(.on-p){
+    font-size: 35px;
+    letter-spacing: 5px;
+   
+   
+}
+.container-box .on-p{
+    letter-spacing:5px;
+    line-height: 40px;
+}
+/*------- h5模板说明 ------*/
+
+
+/* -------火箭图标布局--------- */
+.indrance{
+height: auto;
+text-align: center;
+animation: changecolor 3s infinite ease;
+transition: all 1s;
+}
+.indran{
+    background:linear-gradient(270deg,pink,#ccc,skyblue);
+}
+/* @keyframes changecolor{
+   0%{background:linear-gradient(270deg,pink,#ccc,skyblue);}
+   25%{background:linear-gradient(0deg,pink,#ccc,skyblue);}
+   50%{background:linear-gradient(180deg,pink,#ccc,skyblue,);}
+   100%{background:linear-gradient(360deg,pink,#ccc,skyblue);}
+
+} */
+.indrance .indrance-wrap{
+    padding: 100px 200px;
+    box-sizing: border-box;
+    
+}
+.indrance .indrance-wrap p:nth-of-type(1){
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+.indrance .indrance-wrap p:nth-of-type(2){
+    color: rgba(0, 0, 0, .8);
+    font-size: 18px;
+    margin:40px 0 20px 0; 
+}
+.indrance-wrap .arrow{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.indrance-wrap .arrow div{
+    
+    width: 32%;
+    padding: 30px 0;
+    border: 1px solid olivedrab;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    vertical-align: middle; 
+   
+   
+}
+.arrow>div>img{
+    display: inline-block;
+    height: 100px;
+}
+.arrow>div>img:nth-of-type(2)
+{
+    display: none;
+}
+
+
+/* -------火箭图标布局--------- */
+
+
+/* -------海量挑选---- */
+.ins{
+    background-color: rgba(192,192,192,.3) !important;
+}
+.indrance-wrap .arrows div{
+    width: 25%;
+    height: 200px;
+    border: none;
+    padding: 0;
+}
+.arrows div img{
+   width: 100%;
+   height: 100%;
+  
+}
+.inss{
+    background-color:transparent;
+}
+.indrance-wrap .arrw div{
+width: 30%;
+height: 250px;
+padding: 0;
+border: none;
+}
+.indrance-wrap .arrw div img{
+width: 100%;
+height: 100%;
+}
+
+
+/* -------海量挑选---- */
+
+/* -------海量挑选---- */
+.ins .btn{
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   height: 60px;
+   line-height: 60px;
+   padding: 0 20px;
+    border-radius: 8px;
+    background-color: skyblue;
+    cursor: pointer;
+}
+.insss{
+    height: 100px;
+}
+.ins .btn img{
+    display: inline-block;
+    transform:rotate(-90deg);
+    width: 40px;
+    height: 40px;
+    color: white;
+    vertical-align: middle;
+}
+/* -------海量挑选---- */

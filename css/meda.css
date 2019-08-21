@@ -1,0 +1,162 @@
+@media only screen and (max-width:768px){
+.nav{
+       padding: 0 10px;
+   } 
+.left-sidebar{
+       display: none;
+   }
+
+.topsidebar .hide{
+    display: block;
+    font-size: 25px;
+    color: white;
+}
+.topsidebar .right li{
+    padding: 0 8px;
+    
+}
+.topsidebar .right li:nth-child(3){
+    padding-right: 0;
+}
+.topsidebar .right li a i{
+    font-size: 15px;
+}
+.logo{
+    top: 0;
+    left: 50% !important;
+    transform: translateX(-50%);
+    background-size: 80px 30px !important;
+    
+}
+/* -------音频区域------- */
+.content .corner{
+
+    display: none;
+    z-index: 0;
+}
+.content{
+    height: 230px;
+   
+}
+.content .content-wrap{
+    padding: 0 10px;
+}
+.content .content-wrap h1{
+    
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.content .content-wrap h1 p{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+.content-wrap h1:nth-of-type(1),
+.content-wrap h2:nth-of-type(1){
+    display: none;
+}
+.content-wrap h1:nth-of-type(2),
+.content-wrap h2:nth-of-type(2){
+    display: block;
+}
+
+.content-wrap h2{
+    margin-top: 10px;
+    float: none;
+    font-size: 13px;
+}
+.content-wrap h2 span{
+   
+    margin-bottom: 15px;
+}
+.content-wrap .btn{
+    left: 20px;
+    bottom: 40px;
+    padding: 0;
+    height: 40px;
+    width: 120px;
+    font-size: 13px;
+    background-color: #00648f;
+    border: none;
+    color: white;
+
+}
+/* <!-- 电脑展示 --> */
+.wrapper{
+  height: 400px;
+
+}
+.wrapper .wrapper-box{
+    padding: 20px 10px;
+}
+.wrapper .wrapper-box p:nth-of-type(1){
+    font-size: 25px;
+    
+}
+.wrapper .wrapper-box p span{
+   margin-top: 15px;
+    font-size: 15px;
+}
+.wrapper-box .computer{
+    display: none;
+}
+.wrapper-box .computers{
+    display: block;
+    height: 200px;
+}
+/* <!-- 电脑展示 --> */
+
+/* 模版说明 */
+
+
+.conatiner .container-box{
+    overflow: hidden;
+    padding: 20px 10px;
+    flex-direction: column;
+    height: auto;
+}
+.conatiner .cons{
+    flex-direction:column-reverse;
+}
+.conatiner .container-box .con{
+    height: 200px;
+}
+.conatiner .container-box .r-con{
+    height: auto;
+}
+.container-box .r-con p{
+    text-align: center;
+}
+.container-box .r-con p:not(.on-p){
+    font-size: 15px;
+   
+}
+.container-box .on-p{
+    
+    line-height: 30px;
+    font-size: 12px
+}
+
+/* 模版说明 */
+
+/* 火箭图标 */
+.indrance .indrance-wrap{
+    padding: 30px 10px;
+
+}
+.indrance .indrance-wrap p:nth-of-type(1){
+    font-size: 20px;
+}
+.indrance .indrance-wrap p:nth-of-type(2){
+    font-size: 14px;
+    margin-top: 20px;
+}
+.indrance-wrap .arrow div{
+    width: 100%;
+}
+/* 火箭图标 */
+
+}
+

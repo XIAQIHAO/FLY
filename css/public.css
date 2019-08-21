@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,dd{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,dl{
+    list-style-type: none;
+     padding-left: none;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color: rgba(255, 255, 255, .8);
+}
+input{
+    border: none;
+    outline: none;
+}
+img{
+    border: none;
+    vertical-align: middle;
+}
+/* ----------------------------------------------------- */
+.clearfix::before,
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.fl-l{
+    float: left;
+}
+.fl-r{
+    float: right;
+}
+.pos-a{
+    position: absolute;
+}
+.pos-r{
+    position: relative;
+}
